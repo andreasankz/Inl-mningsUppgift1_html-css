@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 * {
     box-sizing: border-box;
@@ -57,6 +58,7 @@ html, body {
 
 
 /* navbar-top */
+
 .navbar-top {
     display: none;
     padding: 1rem 0;
@@ -111,3 +113,34 @@ html, body {
 .navbar-top a:hover {
     color: #25E6C8;
 }
+
+/* Navbar-main*/
+
+.navbar-main .container {
+    padding: 0;
+}
+
+.web-info {
+    order: 1;
+}
+
+.navbar-main li {
+    list-style: none;
+    margin-left: 1rem;
+    justify-content: center;
+    
+}
+
+.navbar-main ul {
+   
+   justify-content: center;
+   padding: 0;
+   font-family: 'Roboto Slab', serif;
+   font-size: 18px;
+   display: flex;
+}
+
+
+
+
+
