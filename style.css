@@ -213,7 +213,8 @@ html, body {
 
 /* Showcase */
 #showcase {
-    background: #DEDEDE
+    background: #DEDEDE;
+    
 }
 
 #showcase .text-info {
@@ -289,6 +290,7 @@ html, body {
     #showcase .container .person-image {
         display: block;
         padding-top: 2rem;
+        padding-bottom: 0px;
         
     }
 } 
