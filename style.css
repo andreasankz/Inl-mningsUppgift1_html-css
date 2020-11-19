@@ -257,6 +257,10 @@ html, body {
     }
 }
 
+.info-btn:hover {
+    background-color: #2BAAEC;
+}
+
 .info-btn {
     font-size: 18px;
     font-weight: bold;
@@ -342,11 +346,14 @@ html, body {
     font-size: 16px ;
     color: #363636;
     font-weight: normal;
-    padding-top: 0.67em;
+    padding-top: 1rem;
+    text-align: center;
 }
 @media (min-width: 1200px) {
     #about-us .about-info .summary-info h2 {
         font-size: 18px;
+        text-align: left;
+        padding-top: 3rem;
     }
 }
 
@@ -354,11 +361,12 @@ html, body {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    margin-right: 15px;
 }
 @media (min-width: 1200px) {
-    #about-us .clinic-info {
+    #about-us .clinic-info  {
         text-align: left;
-        padding-right: 10%;
+        justify-content: none;
     }
 }
 
@@ -371,7 +379,7 @@ html, body {
 @media (min-width: 1200px) {
     #about-us .clinic-info h1 {
         font-size: 40px;
-        
+        text-align: left;
     }
 }
 
@@ -386,6 +394,7 @@ html, body {
     #about-us .about-info h2 {
         font-size: 18px;
         margin-block-start: 0;
+        text-align: left;
     }
 }
 
@@ -405,3 +414,144 @@ html, body {
 }
 
 
+
+
+
+/* services */
+.service-box {
+    background: #ffffff;
+    border-radius: 0.75rem;
+}
+
+#services {
+    background: #f7f7f7;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+@media (min-width: 1200px) {
+    #services {
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+}
+
+#services .menu {
+    margin-top: 0.5rem;
+}
+@media (min-width: 1200px) {
+    #services .menu {
+        margin-top: 1rem;
+        
+    }
+}
+
+
+#services .title h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0.5rem;
+    color: #363636;
+    text-align: center;
+}
+@media (min-width: 1200px) {
+    #services .title h1 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 40px;
+        font-weight: normal;
+        margin: 0.5rem;
+        color: #363636;
+    }
+}
+
+#services .service-box .img-background {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+@media (min-width: 1200px) {
+    #services .service-box .img-background {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+#services .service-box h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #363636;
+}
+@media (min-width: 1200px) {
+    #services .service-box h2 {
+        font-size: 22px;
+    }
+}
+
+#services .service-box p {
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    color: #363636;
+}
+@media (min-width: 1200px) {
+    #services .service-box p {
+        font-size: 18px;
+    }
+}
+
+#services .border {
+    border: 2px solid #25E6C8;
+    grid-area: ti;
+    margin-bottom: 2rem;
+    
+}
+
+#services .container .menu {
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+@media (min-width: 1200px) {
+    #services .container .menu{
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+        gap: 1.8rem;
+        
+    }
+}
+@media (min-width: 1200px) { 
+    #services .container .menu { 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-areas:    "e ti r"
+                                "b1 b2 b3"
+                                "b4 b5 b6";
+    }
+}
+
+#service-title {
+    grid-area: ti;
+}
+#service-box-1 {
+    grid-area: b1;
+}
+#service-box-2 {
+    grid-area: b2;
+}
+#service-box-3 {
+    grid-area: b3;
+}
+#service-box-4 {
+    grid-area: b4;
+}
+#service-box-5 {
+    grid-area: b5;
+}
+#service-box-6 {
+    grid-area: b6;
+}
