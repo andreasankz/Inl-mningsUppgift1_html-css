@@ -33,7 +33,6 @@ html, body {
     font-size: 1rem;
 }
 
-
 .container {
     width: 100%;
     margin-left: auto;
@@ -41,7 +40,6 @@ html, body {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
@@ -89,7 +87,6 @@ html, body {
 .navbar-top .container {
     padding: 0;
 }
-
 @media (min-width: 768px) {
     .navbar-top {
         display: block;
@@ -218,7 +215,7 @@ html, body {
 }
 
 #showcase .text-info {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     padding-top: 1rem;
     text-align: center;
     
@@ -242,6 +239,9 @@ html, body {
     #showcase .text-info h1 {
         font-size: 60px;
         font-family: 'Roboto Slab', serif;
+        margin-block-start: 0.2em;
+        margin-block-end: 0.7em;
+        line-height: 1.2;
     }
 }
 
@@ -250,7 +250,6 @@ html, body {
     color: #363636;
     font-weight: normal;
     padding-bottom: 1rem;
-    opacity: 60%;
 }
 @media (min-width: 768px){
     #showcase .text-info h2 {
@@ -294,3 +293,115 @@ html, body {
         
     }
 } 
+
+
+
+
+
+/* About us */
+#about-us .about-info .summary-info {
+    margin-top: 3.5rem;
+}
+@media (min-width:1200px) {
+    #about-us .about-info  {
+        margin-top: 8rem;
+        padding-right: 20%;
+    }
+}
+
+#about-us .summary-info .color {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: left;
+}
+
+#about-us .border {
+    border: 2px solid #25E6C8;
+
+}
+
+#about-us .border-1 {
+    border: 15px solid transparent;
+}
+
+#about-us .about-info .summary-info h1 {
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    color: #363636;
+    font-weight: normal;
+    text-align: center;
+}
+@media (min-width:1200px) {
+    #about-us .about-info .summary-info h1 {
+        font-size: 40px;
+        text-align: left;
+    }
+}
+
+#about-us .about-info .summary-info h2 {
+    font-size: 16px ;
+    color: #363636;
+    font-weight: normal;
+    padding-top: 0.67em;
+}
+@media (min-width: 1200px) {
+    #about-us .about-info .summary-info h2 {
+        font-size: 18px;
+    }
+}
+
+#about-us .clinic-info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+@media (min-width: 1200px) {
+    #about-us .clinic-info {
+        text-align: left;
+        padding-right: 10%;
+    }
+}
+
+#about-us .clinic-info h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    color: #2BAAEC;
+    margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+    #about-us .clinic-info h1 {
+        font-size: 40px;
+        
+    }
+}
+
+#about-us .clinic-info h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+}
+@media (min-width: 1200px) {
+    #about-us .about-info h2 {
+        font-size: 18px;
+        margin-block-start: 0;
+    }
+}
+
+#about-us .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-us .person-image-2 {
+    display: none;
+}
+@media (min-width: 1200px) {
+    #about-us .person-image-2 {
+        display: block;
+        margin-top: 8%;
+    }
+}
+
+
