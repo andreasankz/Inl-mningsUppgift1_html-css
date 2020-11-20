@@ -10,7 +10,6 @@
 }
 
 html, body {
-    font-weight: 400;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     margin: 0;
@@ -230,17 +229,17 @@ html, body {
 }
 
 #showcase .text-info h1 {
-    font-size: 30px;
+    font-size: 34px;
     color: #363636;
     font-weight: normal;
     font-family: 'Roboto Slab', serif;
+    line-height: 1.2;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     #showcase .text-info h1 {
         font-size: 60px;
         font-family: 'Roboto Slab', serif;
-        margin-block-start: 0.2em;
-        margin-block-end: 0.7em;
+        
         line-height: 1.2;
     }
 }
@@ -271,7 +270,6 @@ html, body {
     border-radius: 0.75rem;
     border: 1px transparent;
     background-color: #25E6C8;
-    font-size: 1rem;
 }
 @media (min-width: 768px){
     .info-btn {
@@ -292,9 +290,14 @@ html, body {
 @media (min-width: 1200px) {
     #showcase .container .person-image {
         display: block;
+        padding-top: 3rem;
+        margin-bottom: -10px;
+    }
+}
+@media (min-width: 1400px) {
+    #showcase .container .person-image {
         padding-top: 2rem;
-        padding-bottom: 0px;
-        
+        margin-bottom: -7px;
     }
 } 
 
@@ -304,7 +307,7 @@ html, body {
 
 /* About us */
 #about-us .about-info .summary-info {
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
 }
 @media (min-width:1200px) {
     #about-us .about-info  {
@@ -321,7 +324,6 @@ html, body {
 
 #about-us .border {
     border: 2px solid #25E6C8;
-
 }
 
 #about-us .border-1 {
@@ -334,17 +336,19 @@ html, body {
     color: #363636;
     font-weight: normal;
     text-align: center;
+    line-height: 1.2;
 }
 @media (min-width:1200px) {
     #about-us .about-info .summary-info h1 {
         font-size: 40px;
         text-align: left;
+        line-height: 1.2;
     }
 }
 
 #about-us .about-info .summary-info h2 {
     font-size: 16px ;
-    color: #363636;
+    color: #626262;
     font-weight: normal;
     padding-top: 1rem;
     text-align: center;
@@ -375,11 +379,18 @@ html, body {
     font-size: 24px;
     color: #2BAAEC;
     margin-bottom: 0;
+    font-weight: normal;
 }
 @media (min-width: 1200px) {
     #about-us .clinic-info h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+}
+@media (min-width: 1400px) {
+    #about-us .clinic-info h1 {
         font-size: 40px;
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -389,8 +400,16 @@ html, body {
     font-weight: normal;
     margin-top: 0.2rem;
     margin-bottom: 2rem;
+    color: #363636
 }
 @media (min-width: 1200px) {
+    #about-us .about-info h2 {
+        font-size: 16px;
+        margin-block-start: 0;
+        text-align: left
+    }
+}
+@media (min-width: 1400px) {
     #about-us .about-info h2 {
         font-size: 18px;
         margin-block-start: 0;
@@ -401,6 +420,12 @@ html, body {
 #about-us .container {
     display: flex;
     justify-content: space-between;
+
+}
+@media (min-width:1200px) {
+    #about-us .container {
+        padding: 0;
+    }
 }
 
 #about-us .person-image-2 {
@@ -409,7 +434,14 @@ html, body {
 @media (min-width: 1200px) {
     #about-us .person-image-2 {
         display: block;
+        margin-top: 18%;
+        margin-bottom: -7px;
+    }
+}
+@media (min-width: 1400px) {
+    #about-us .person-image-2 {
         margin-top: 8%;
+        margin-bottom: -7px;
     }
 }
 
@@ -425,7 +457,7 @@ html, body {
 
 #services {
     background: #f7f7f7;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     padding-bottom: 3rem;
 }
 @media (min-width: 1200px) {
@@ -444,7 +476,6 @@ html, body {
         
     }
 }
-
 
 #services .title h1 {
     font-family: 'Roboto Slab', serif;
@@ -494,7 +525,7 @@ html, body {
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
-    color: #363636;
+    color: #626262
 }
 @media (min-width: 1200px) {
     #services .service-box p {
@@ -554,4 +585,98 @@ html, body {
 }
 #service-box-6 {
     grid-area: b6;
+}
+
+
+
+
+
+/* appointment */
+#appointment {
+    background-color:#2BAAEC;
+    opacity: 80%;
+}
+
+#appointment .info {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+@media (min-width: 1200px) {
+    #appointment .info {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+#appointment .info h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-align: center;
+}
+@media (min-width: 1200px) {
+    #appointment .info h1 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 30px;
+        font-weight: normal;
+        color: #FFFFFF;
+    }
+}
+
+#appointment .book-btn:hover {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #2BAAEC;
+}
+
+#appointment .book-btn {
+    font-size: 18px;
+    
+    font-weight: bold;
+    color: #2BAAEC;
+    height: 60px;
+    width: 285px;
+    border-radius: 0.75rem;
+    border: 1px transparent;
+    background-color: #FFFFFF;
+    margin-top: 2rem;
+}
+@media (min-width: 1200px) {
+    #appointment .book-btn {
+        font-size: 18px;
+        font-weight: bold;
+        color: #2BAAEC;
+        text-align: center;
+        height: 60px;
+        width: 285px;
+        border-radius: 0.75rem;
+        border: 1px transparent;
+        background-color: #FFFFFF;
+        
+    }
+}
+
+
+
+
+
+/* footer */
+#footer {
+    background-color: #2BAAEC;
+}
+
+#footer .container {
+    text-align: center;
+}
+
+#footer .copyright {
+   color: #F3FBFF;
+   opacity: 60%;
+   padding-top: 2rem;
+   padding-bottom: 1rem;
 }
