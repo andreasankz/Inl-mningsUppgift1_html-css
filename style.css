@@ -213,6 +213,11 @@ html, body {
     
 }
 
+@media (min-width: 1200px) {
+    #showcase .container {
+        padding: 0;
+    }
+}
 #showcase .text-info {
     padding-bottom: 2rem;
     padding-top: 1rem;
@@ -291,7 +296,7 @@ html, body {
     #showcase .container .person-image {
         display: block;
         padding-top: 3rem;
-        margin-bottom: -10px;
+        margin-bottom: -7px;
     }
 }
 @media (min-width: 1400px) {
@@ -450,11 +455,6 @@ html, body {
 
 
 /* services */
-.service-box {
-    background: #ffffff;
-    border-radius: 0.75rem;
-}
-
 #services {
     background: #f7f7f7;
     padding-top: 1.5rem;
@@ -467,13 +467,9 @@ html, body {
     }
 }
 
-#services .menu {
-    margin-top: 0.5rem;
-}
 @media (min-width: 1200px) {
-    #services .menu {
-        margin-top: 1rem;
-        
+    #services .container {
+        padding: 0;
     }
 }
 
@@ -495,6 +491,22 @@ html, body {
     }
 }
 
+#services .menu {
+    margin-top: 0.5rem;
+}
+@media (min-width: 1200px) {
+    #services .menu {
+        margin-top: 1rem;
+        
+    }
+}
+
+#services .service-box {
+    background: #ffffff;
+    border-radius: 0.75rem;
+    
+}
+
 #services .service-box .img-background {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -503,6 +515,103 @@ html, body {
     #services .service-box .img-background {
         margin-top: 3rem;
         margin-bottom: 3rem;
+    }
+}
+
+#services .service-box #tooth-1 {
+    position: relative;
+    top: 2.5em;
+    color: #ffffff;
+    font-size: 3rem;
+}
+@media (min-width: 1200px) {
+    #services .service-box #tooth-1 {
+        top: 2.8em;
+        color: #ffffff;
+        font-size: 3rem;
+    }
+}
+#services .service-box #search {
+    position: relative;
+    color:#2BAAEC;
+    top: -6.8rem;
+    left: 1rem;
+    font-size: 2rem;
+}
+@media (min-width: 1200px) {
+    #services .service-box #search {
+        top: -8.8rem;
+        left: 1rem;
+    }
+}
+
+#services .service-box #cross {
+    position: relative;
+    top: -7rem;
+    left: 0.7rem;
+    color: #25E6C8;
+    font-size: 2rem;
+}
+@media (min-width: 1200px) {
+    #services .service-box #cross {
+        top: -9.2rem;
+        left: 0.8rem;
+    }
+}
+
+#services .service-box #erase {
+    position: relative;
+    top: -6.8rem;
+    left: 0.8rem;
+    font-size: 2rem;
+    color: #2BAAEC;
+    
+}
+@media (min-width: 1200px) {
+    #services .service-box #erase {
+        top: -9.2rem;
+        left: 0.8rem;
+    }
+}
+#services .service-box #brush {
+    position: relative;
+    top: -6.8rem;
+    left: 0.8rem;
+    font-size: 2rem;
+    color: #2BAAEC;
+}
+@media (min-width: 1200px) {
+    #services .service-box #brush {
+        top: -9.2rem;
+        left: 0.8rem;
+    }
+}
+
+#services .service-box #hammer {
+    position: relative;
+    top: -6.8rem;
+    left: 0.8rem;
+    font-size: 2rem;
+    color: #2BAAEC;
+}
+@media (min-width: 1200px) {
+    #services .service-box #hammer {
+        top: -9.2rem;
+        left: 0.9rem;
+    }
+}
+
+#services .service-box #hand {
+    position: relative;
+    top: -7rem;
+    left: 0.6rem;
+    font-size: 2rem;
+    color: #2BAAEC;
+}
+@media (min-width: 1200px) {
+    #services .service-box #hand {
+        top: -9rem;
+        left: 0.7rem;
     }
 }
 
@@ -595,6 +704,12 @@ html, body {
 #appointment {
     background-color:#2BAAEC;
     opacity: 80%;
+}
+
+@media (min-width: 1200px) {
+    #appointment .container {
+        padding: 0;
+    }
 }
 
 #appointment .info {
