@@ -311,28 +311,40 @@ html, body {
 
 
 /* About us */
-#about-us .about-info .summary-info {
+#about-us  {
     margin-top: 2.5rem;
 }
+
 @media (min-width:1200px) {
     #about-us .about-info  {
-        margin-top: 8rem;
-        padding-right: 20%;
+        margin-top: 2.5rem;
+        padding-right: 15%;
     }
 }
 
-#about-us .summary-info .color {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    text-align: left;
+#about-us .space {
+    display: none;
+}
+@media (min-width:1200px){
+    #about-us .space {
+        display: block;
+    }
+}
+
+
+#about-us .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+@media (min-width:1200px) {
+    #about-us .container {
+        padding: 0;
+    }
 }
 
 #about-us .border {
     border: 2px solid #25E6C8;
-}
-
-#about-us .border-1 {
-    border: 15px solid transparent;
 }
 
 #about-us .about-info .summary-info h1 {
@@ -348,6 +360,7 @@ html, body {
         font-size: 40px;
         text-align: left;
         line-height: 1.2;
+        margin-bottom: 1rem;
     }
 }
 
@@ -362,40 +375,27 @@ html, body {
     #about-us .about-info .summary-info h2 {
         font-size: 18px;
         text-align: left;
-        padding-top: 3rem;
+        padding-top: 1.5rem;
     }
 }
 
 #about-us .clinic-info {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    margin-right: 15px;
-}
-@media (min-width: 1200px) {
-    #about-us .clinic-info  {
-        text-align: left;
-        justify-content: none;
-    }
 }
 
 #about-us .clinic-info h1 {
     font-family: 'Roboto Slab', serif;
-    font-size: 24px;
+    font-size: 30px;
     color: #2BAAEC;
     margin-bottom: 0;
     font-weight: normal;
+    text-align: center;
 }
 @media (min-width: 1200px) {
     #about-us .clinic-info h1 {
-        font-size: 38px;
-        text-align: center;
-    }
-}
-@media (min-width: 1400px) {
-    #about-us .clinic-info h1 {
         font-size: 40px;
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -408,28 +408,8 @@ html, body {
     color: #363636
 }
 @media (min-width: 1200px) {
-    #about-us .about-info h2 {
-        font-size: 16px;
-        margin-block-start: 0;
-        text-align: left
-    }
-}
-@media (min-width: 1400px) {
-    #about-us .about-info h2 {
+    #about-us .clinic-info h2 {
         font-size: 18px;
-        margin-block-start: 0;
-        text-align: left;
-    }
-}
-
-#about-us .container {
-    display: flex;
-    justify-content: space-between;
-
-}
-@media (min-width:1200px) {
-    #about-us .container {
-        padding: 0;
     }
 }
 
@@ -439,16 +419,11 @@ html, body {
 @media (min-width: 1200px) {
     #about-us .person-image-2 {
         display: block;
-        margin-top: 18%;
+        margin-top: 4%;
         margin-bottom: -7px;
     }
 }
-@media (min-width: 1400px) {
-    #about-us .person-image-2 {
-        margin-top: 8%;
-        margin-bottom: -7px;
-    }
-}
+
 
 
 
@@ -504,7 +479,6 @@ html, body {
 #services .service-box {
     background: #ffffff;
     border-radius: 0.75rem;
-    
 }
 
 #services .service-box .img-background {
@@ -573,6 +547,7 @@ html, body {
         left: 0.8rem;
     }
 }
+
 #services .service-box #brush {
     position: relative;
     top: -6.8rem;
