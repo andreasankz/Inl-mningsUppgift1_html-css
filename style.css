@@ -295,8 +295,9 @@ html, body {
 @media (min-width: 1200px) {
     #showcase .container .person-image {
         display: block;
-        padding-top: 3rem;
+        padding-top: 1.375rem;
         margin-bottom: -7px;
+        margin-left: -45px;
     }
 }
 @media (min-width: 1400px) {
@@ -312,7 +313,7 @@ html, body {
 
 /* About us */
 #about-us  {
-    margin-top: 2.5rem;
+    margin-top: 5.3125rem;
 }
 
 @media (min-width:1200px) {
@@ -321,16 +322,6 @@ html, body {
         padding-right: 15%;
     }
 }
-
-#about-us .space {
-    display: none;
-}
-@media (min-width:1200px){
-    #about-us .space {
-        display: block;
-    }
-}
-
 
 #about-us .container {
     display: flex;
@@ -343,8 +334,12 @@ html, body {
     }
 }
 
-#about-us .border {
-    border: 2px solid #25E6C8;
+#about-us .aboutus-border {
+    border-bottom: 4px solid #25E6C8;
+}
+
+#about-us .about-info .summary-info h1 .blue {
+    color: #2BAAEC;
 }
 
 #about-us .about-info .summary-info h1 {
@@ -361,6 +356,7 @@ html, body {
         text-align: left;
         line-height: 1.2;
         margin-bottom: 1rem;
+        width: 80%;
     }
 }
 
@@ -419,7 +415,14 @@ html, body {
 @media (min-width: 1200px) {
     #about-us .person-image-2 {
         display: block;
-        margin-top: 4%;
+        padding-top: 1rem;
+        margin-bottom: -8px;
+    }
+}
+@media (min-width: 1400px) {
+    #about-us .person-image-2 {
+        display: block;
+        
         margin-bottom: -7px;
     }
 }
@@ -437,8 +440,8 @@ html, body {
 }
 @media (min-width: 1200px) {
     #services {
-        padding-top: 8%;
-        padding-bottom: 8%;
+        padding-top: 10.125rem;
+        padding-bottom: 9.375rem;
     }
 }
 
@@ -461,7 +464,6 @@ html, body {
         font-family: 'Roboto Slab', serif;
         font-size: 40px;
         font-weight: normal;
-        margin: 0.5rem;
         color: #363636;
     }
 }
@@ -479,115 +481,63 @@ html, body {
 #services .service-box {
     background: #ffffff;
     border-radius: 0.75rem;
-}
-
-#services .service-box .img-background {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-@media (min-width: 1200px) {
-    #services .service-box .img-background {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
-}
-
-#services .service-box #tooth-1 {
-    position: relative;
-    top: 2.5em;
-    color: #ffffff;
-    font-size: 3rem;
-}
-@media (min-width: 1200px) {
-    #services .service-box #tooth-1 {
-        top: 2.8em;
-        color: #ffffff;
-        font-size: 3rem;
-    }
-}
-#services .service-box #search {
-    position: relative;
-    color:#2BAAEC;
-    top: -6.8rem;
-    left: 1rem;
-    font-size: 2rem;
-}
-@media (min-width: 1200px) {
-    #services .service-box #search {
-        top: -8.8rem;
-        left: 1rem;
-    }
-}
-
-#services .service-box #cross {
-    position: relative;
-    top: -7rem;
-    left: 0.7rem;
-    color: #25E6C8;
-    font-size: 2rem;
-}
-@media (min-width: 1200px) {
-    #services .service-box #cross {
-        top: -9.2rem;
-        left: 0.8rem;
-    }
-}
-
-#services .service-box #erase {
-    position: relative;
-    top: -6.8rem;
-    left: 0.8rem;
-    font-size: 2rem;
-    color: #2BAAEC;
     
 }
-@media (min-width: 1200px) {
-    #services .service-box #erase {
-        top: -9.2rem;
-        left: 0.8rem;
-    }
+
+#services .service-box .wrapper {
+    padding-top: 4.375rem;
 }
 
-#services .service-box #brush {
-    position: relative;
-    top: -6.8rem;
-    left: 0.8rem;
-    font-size: 2rem;
-    color: #2BAAEC;
-}
-@media (min-width: 1200px) {
-    #services .service-box #brush {
-        top: -9.2rem;
-        left: 0.8rem;
-    }
+#services .service-box  .tooth-set {
+    padding-top: 1.6rem;
 }
 
-#services .service-box #hammer {
-    position: relative;
-    top: -6.8rem;
-    left: 0.8rem;
-    font-size: 2rem;
-    color: #2BAAEC;
-}
-@media (min-width: 1200px) {
-    #services .service-box #hammer {
-        top: -9.2rem;
-        left: 0.9rem;
-    }
+#services .service-box .icon-bg-tooth {
+    margin: auto;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #25E6C8;
 }
 
-#services .service-box #hand {
-    position: relative;
-    top: -7rem;
-    left: 0.6rem;
-    font-size: 2rem;
-    color: #2BAAEC;
+#services .service-box .icon-bg-removal {
+    margin: auto;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #2BAAEC;
 }
-@media (min-width: 1200px) {
-    #services .service-box #hand {
-        top: -9rem;
-        left: 0.7rem;
-    }
+
+#services .service-box .icon-bg-tartar {
+    margin: auto;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #25E6C8;
+}
+
+#services .service-box .icon-bg-polish {
+    margin: auto;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #25E6C8;
+}
+
+#services .service-box .icon-bg-implants {
+    margin: auto;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #25E6C8;
+}
+
+#services .service-box .icon-bg-protection {
+    margin: auto;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #25E6C8;
 }
 
 #services .service-box h2 {
@@ -595,6 +545,8 @@ html, body {
     font-size: 20px;
     font-weight: normal;
     color: #363636;
+    margin-top: 2.9375rem;
+    margin-bottom: 1.25rem;
 }
 @media (min-width: 1200px) {
     #services .service-box h2 {
