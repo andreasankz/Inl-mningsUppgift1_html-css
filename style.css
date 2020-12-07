@@ -310,7 +310,12 @@ html, body {
 
 /* About us */
 #about-us  {
-    margin-top: 5.3125rem;
+    margin-top: 1.5rem;
+}
+@media (min-width: 1200px) {
+    #about-us  {
+        margin-top: 5.3125rem;
+    }
 }
 
 @media (min-width:1200px) {
