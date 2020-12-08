@@ -125,6 +125,7 @@ html, body {
 
 .navbar-top a:hover {
     color: #25E6C8;
+    transition: all 0.2s ease-in-out;
 }
 
 
@@ -153,7 +154,6 @@ html, body {
 @media (min-width: 768px) {
     #navbar-main .logoimg {
         height: 65px;
-        
     }
 }
 
@@ -189,6 +189,7 @@ html, body {
 
 #navbar-main .container .web-info ul li a:hover {
     color: #25E6C8;
+    transition: all 0.2s ease-in-out;
 }
 
 #navbar-main .container .web-info button {
@@ -261,6 +262,7 @@ html, body {
 
 .info-btn:hover {
     background-color: #2BAAEC;
+    transition: all 0.2s ease-in-out;
 }
 
 .info-btn {
@@ -471,21 +473,30 @@ html, body {
 @media (min-width: 1200px) {
     #services .menu {
         margin-top: 1rem;
-        
     }
 }
 
 #services .service-box {
     background: #ffffff;
     border-radius: 0.75rem;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+#services .service-box:hover {
+    box-shadow: 10px 10px 15px rgb(177, 173, 173);
 }
 
 #services .service-box .wrapper {
-    padding-top: 4.375rem;
+    padding-top: 2.375rem;
+}
+@media (min-width: 1200px) {
+    #services .service-box .wrapper {
+        padding-top: 4.375rem;
+    }
 }
 
 #services .service-box  .tooth-set {
-    padding-top: 1.6rem;
+    padding-top: 1.7rem;
 }
 
 #services .service-box .icon-bg-tooth {
@@ -661,6 +672,7 @@ html, body {
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
     background-color: #2BAAEC;
+    transition: all 0.2s ease-in-out;
 }
 
 #appointment .book-btn {
